@@ -629,9 +629,8 @@ demo = {
 
     $.notify(
       {
-        icon: "nc-icon nc-app",
-        message:
-          "Welcome to <b>Light Bootstrap Dashboard</b> - a beautiful freebie for every web developer."
+        icon: "nc-icon pe-7s-door-lock",
+        message: "<b>Mapa de Calor de Honduras | 911</b>."
       },
       {
         type: type[color],
