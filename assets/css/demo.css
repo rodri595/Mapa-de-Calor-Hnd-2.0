@@ -1,3 +1,100 @@
+
+@media only screen and (max-width: 7680px) {
+  #map {
+      width: 98%;
+      height: 95%;
+      position: absolute;
+
+  }
+}
+
+@media only screen and (max-width: 5760px) {
+  #map {
+      width: 98%;
+      height: 90%;
+      position: absolute;
+
+  }
+}
+
+@media only screen and (max-width: 2570px) {
+  #map {
+      width: 98%;
+      height: 90%;
+      position: absolute;
+
+  }
+}
+
+
+
+@media only screen and (max-width: 2134px) {
+  #map {
+      width: 98%;
+      height: 92%;
+      position: absolute;
+
+  }
+
+}
+
+@media only screen and (max-width: 1921px) {
+  #map {
+      width: 98%;
+      height: 85%;
+      position: absolute;
+
+  }
+
+}
+
+@media only screen and (max-width: 1536px) {
+  #map {
+      width: 98%;
+      height: 87%;
+      position: absolute;
+
+  }
+
+}
+
+@media only screen and (max-width: 1280px) {
+  #map {
+      width: 97%;
+      height: 85%;
+      position: absolute;
+
+  }
+
+}
+
+@media only screen and (max-width: 1097.14px) {
+  #map {
+      width: 96%;
+      height: 85%;
+      position: absolute;
+
+  }
+
+}
+
+@media only screen and (max-width: 952.5px) {
+  #map {
+      width: 96%;
+      height: 80%;
+      position: absolute;
+
+  }
+@media only screen and (max-width: 375px) {
+  #map {
+      width: 90%;
+      height: 80%;
+      position: absolute;
+
+  }
+
+}
+
 .tim-row {
   margin-bottom: 20px;
 }
@@ -39,14 +136,6 @@
   border-radius: 0 !important;
   margin-bottom: 15px;
   z-index: 2;
-}
-
-#map {
-  position: absolute;
-  /* width: 96%;
-  height: 82%; */
-  /* height: 100%;
-  width: 100vw; */
 }
 
 
@@ -358,11 +447,6 @@
   margin-bottom: 30px;
 }
 
-.map-container {
-  width: 100%;
-  height: 100vh;
-  max-height: 100vh;
-}
 
 #menu-dropdown .navbar {
   border-radius: 3px;

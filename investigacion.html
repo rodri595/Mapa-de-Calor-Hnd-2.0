@@ -20,18 +20,6 @@
 
   <!-- Estilos de mapa -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
-  <style>
-    #map {
-      position: absolute;
-      bottom: 0;
-      top: 0;
-      left: 0;
-      right: 0;
-      width: auto;
-      height: 100%;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    }
-  </style>
 </head>
 
 <body>
@@ -103,13 +91,7 @@
       <!-- End Navbar -->
 
       <div class="content">
-        <div class="container-fluid">
-          <div class="section"></div>
-          <!--INICIO de vista mapa-->
-          <div id="map"></div>
-          <!--FIN de vista mapa-->
-
-        </div>
+        <div id="map" class="container-fluid"></div>
       </div>
 
       <footer class="footer">
@@ -136,8 +118,6 @@
 <script src="assets/js/core/bootstrap.min.js" type="text/javascript"></script>
 <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
 <script src="assets/js/plugins/bootstrap-switch.js"></script>
-<!--  Google Maps Plugin    -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
 <!--  Chartist Plugin  -->
 <script src="assets/js/plugins/chartist.min.js"></script>
 <!--  Notifications Plugin    -->
@@ -153,10 +133,6 @@
 <!-- Libs de Mapa leaflet -->
 <script>
   var map = L.map('map').setView([0, 0], 1);
-  // L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=nznZSH1iYoq02e6hM3af', {
-  //   attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
-  // }).addTo(map);
-
 
   L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
     attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
@@ -171,6 +147,4 @@
     opacity: 0.45
   }).addTo(map);
 </script>
-
-
 </html>
