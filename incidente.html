@@ -91,7 +91,14 @@
       <!-- End Navbar -->
 
       <div class="content">
-        <div id="map" class="container-fluid"></div>
+        <div id="map" class="container-fluid">
+          <form>
+            <div class="form-group">
+              <label for="formControlRange">Example Range input</label>
+              <input type="range" class="form-control-range" id="formControlRange">
+            </div>
+          </form>
+        </div>
       </div>
 
       <footer class="footer">
@@ -147,4 +154,5 @@
     opacity: 0.45
   }).addTo(map);
 </script>
+
 </html>
