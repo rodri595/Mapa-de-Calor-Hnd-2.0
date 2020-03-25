@@ -13,6 +13,7 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
   <link href="assets/css/demo.css" rel="stylesheet" />
   <link href="assets/css/dashboard.css" rel="stylesheet" />
+  <link href="assets//css//mediaQueries.css" rel="stylesheet" />
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
@@ -21,18 +22,8 @@
 
   <!-- Estilos de mapa -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
-  <style>
-    #map {
-      position: absolute;
-      bottom: 0;
-      top: 0;
-      left: 0;
-      right: 0;
-      width: auto;
-      height: 100%;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
 
 </head>
 
@@ -105,16 +96,19 @@
       <!-- End Navbar -->
 
       <div class="content">
-        <div class="container-fluid">
-          <div class="section"></div>
-
-          <!--INICIO de vista mapa-->
-          <div id="map"></div>
-          <!--FIN de vista mapa-->
+        <!-- <div class="container-fluid"> -->
+        <!-- <div class="section">
 
 
+          </div> -->
 
-        </div>
+        <!--INICIO de vista mapa-->
+        <div id="map" class="container-fluid"></div>
+        <!--FIN de vista mapa-->
+
+
+
+        <!-- </div> -->
       </div>
 
       <footer class="footer">
