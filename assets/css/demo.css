@@ -42,12 +42,16 @@
 }
 
 #map {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  /* width: 96%;
+  height: 82%; */
+  /* height: 100%;
+  width: 100vw; */
 }
 
-.fixed-plugin li > a,
+
+
+.fixed-plugin li>a,
 .fixed-plugin .badge {
   transition: all 0.34s;
   -webkit-transition: all 0.34s;
@@ -95,9 +99,9 @@
   color: #00bbff;
 }
 
-.fixed-plugin .dropdown-menu > .active > a,
-.fixed-plugin .dropdown-menu > .active > a:hover,
-.fixed-plugin .dropdown-menu > .active > a:focus {
+.fixed-plugin .dropdown-menu>.active>a,
+.fixed-plugin .dropdown-menu>.active>a:hover,
+.fixed-plugin .dropdown-menu>.active>a:focus {
   color: #777777;
   text-align: center;
 }
@@ -109,8 +113,8 @@
   margin: 0 auto;
 }
 
-.fixed-plugin .dropdown-menu li > a:hover,
-.fixed-plugin .dropdown-menu li > a:focus {
+.fixed-plugin .dropdown-menu li>a:hover,
+.fixed-plugin .dropdown-menu li>a:focus {
   box-shadow: none;
 }
 
@@ -221,7 +225,7 @@
   margin-right: 0;
 }
 
-.fixed-plugin .dropdown-menu > li.adjustments-line > a {
+.fixed-plugin .dropdown-menu>li.adjustments-line>a {
   padding-right: 0;
   padding-left: 0;
   /*border-bottom: 1px solid #ddd;*/
@@ -229,7 +233,7 @@
   margin: 0;
 }
 
-.fixed-plugin .dropdown-menu > li > a.img-holder {
+.fixed-plugin .dropdown-menu>li>a.img-holder {
   font-size: 16px;
   text-align: center;
   border-radius: 10px;
@@ -245,23 +249,23 @@
   padding: 0;
 }
 
-.fixed-plugin .dropdown-menu > li > a.switch-trigger:hover,
-.fixed-plugin .dropdown-menu > li > a.switch-trigger:focus {
+.fixed-plugin .dropdown-menu>li>a.switch-trigger:hover,
+.fixed-plugin .dropdown-menu>li>a.switch-trigger:focus {
   background-color: transparent;
 }
 
-.fixed-plugin .dropdown-menu > li:hover > a.img-holder,
-.fixed-plugin .dropdown-menu > li:focus > a.img-holder {
+.fixed-plugin .dropdown-menu>li:hover>a.img-holder,
+.fixed-plugin .dropdown-menu>li:focus>a.img-holder {
   border-color: rgba(0, 187, 255, 0.53);
 }
 
-.fixed-plugin .dropdown-menu > .active > a.img-holder,
-.fixed-plugin .dropdown-menu > .active > a.img-holder {
+.fixed-plugin .dropdown-menu>.active>a.img-holder,
+.fixed-plugin .dropdown-menu>.active>a.img-holder {
   border-color: #00bbff;
   background-color: #ffffff;
 }
 
-.fixed-plugin .dropdown-menu > li > a img {
+.fixed-plugin .dropdown-menu>li>a img {
   margin-top: auto;
 }
 
@@ -334,7 +338,7 @@
   right: -15px;
 }
 
-.wrapper-full-page ~ .fixed-plugin .dropdown.open .dropdown-menu {
+.wrapper-full-page~.fixed-plugin .dropdown.open .dropdown-menu {
   -webkit-transform: translateY(-17%);
   -moz-transform: translateY(-17%);
   -o-transform: translateY(-17%);
@@ -342,7 +346,7 @@
   transform: translateY(-17%);
 }
 
-.wrapper-full-page ~ .fixed-plugin .dropdown .dropdown-menu {
+.wrapper-full-page~.fixed-plugin .dropdown .dropdown-menu {
   -webkit-transform: translateY(-19%);
   -moz-transform: translateY(-19%);
   -o-transform: translateY(-19%);
@@ -559,6 +563,7 @@
     height: 640px;
     overflow: hidden;
   }
+
   .parallax .parallax-image img {
     height: 100%;
     width: auto;
@@ -605,10 +610,12 @@
 }
 
 @media (max-width: 768px) {
+
   .btn,
   .btn-morphing {
     margin-bottom: 10px;
   }
+
   .parallax .motto {
     top: 170px;
     margin-top: 0;
@@ -725,7 +732,7 @@
   text-decoration: none;
 }
 
-.section-examples a + a {
+.section-examples a+a {
   margin-top: 30px;
 }
 
@@ -733,8 +740,8 @@
   margin-top: 30px;
 }
 
-.components-page .wrapper > .header,
-.tutorial-page .wrapper > .header {
+.components-page .wrapper>.header,
+.tutorial-page .wrapper>.header {
   height: 500px;
   padding-top: 128px;
   background-size: cover;
