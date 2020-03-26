@@ -16,15 +16,38 @@
     <div class="logo"></div>
     <div class="title">Mapa De Calor</div>
     <div class="sub-title">Honduras</div>
-    <div class="fields">
+
+
+    <!-- <div class="fields" action="assets/php/login.php" method="POST">
+
       <div class="username">
-        <input type="Cue" class="user-input" placeholder="Usuario" />
+        <input type="text" id="user" placeholder="Usuario" />
       </div>
+
+
       <div class="password">
-        <input type="password" class="pass-input" placeholder="Contraseña" />
+        <input type="password" id="pass" placeholder="Contraseña" />
       </div>
+
+
     </div>
-    <button class="signin-button"><a href="dashboard.html">Entrar</a></button>
+
+
+    <button class="signin-button"><a href="dashboard.html">Entrar</a></button> -->
+    <div class="container">
+      <label for="user"><b>Usuario</b></label>
+      <input type="text" placeholder="Usuario" name="user" required>
+  
+      <label for="pass"><b>Contraseña</b></label>
+      <input type="password" placeholder="Ingrese su Contraseña" name="pass" required>
+  
+      <button type="submit" name="login">Entrar</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+
     <div class="link"><a href="#">Recuperar Contraseña?</a></div>
   </div>
 </body>
